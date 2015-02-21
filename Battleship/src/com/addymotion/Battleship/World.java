@@ -1,14 +1,18 @@
 package com.addymotion.Battleship;
 
+/**
+ * A class representing a Battleship game grid. Can be used for either
+ * human or AI players.
+ * 
+ * The grid is represented by a 2D array of ShipCell objects. Each ShipCell
+ * has a reference to the Ship object of which it is a part.
+ * @author alastair
+ *
+ */
 public class World {
 	private int cellsAlive;
 	private ShipCell[][] worldArray;
 	private int size;
-/*	abstract void initialise(Ship[] shipList);
-	abstract void addShip(Ship shipType) throws InvalidShipException;
-	abstract void printWorld();
-	abstract int getSize();
-	abstract ShipCell getCell(int x, int y);*/
 
 	
 	public int getAliveTotal() { return cellsAlive; }
@@ -22,7 +26,13 @@ public class World {
 		worldArray[x][y]= new ShipCell(shipType);
 	}
 
-	
+	/**
+	 * Prints the World's current state to the console. Cells in the grid are
+	 * represented by special Unicode characters.
+	 * 
+	 * @param showShipLocations If false, ship cells which have not been hit are displayed as
+	 * normal cells.
+	 */
 	public void printWorld(boolean showShipLocations) {
 		System.out.print("# ");
 		for (int x = 0; x<size;x++) System.out.print(x +" ");
