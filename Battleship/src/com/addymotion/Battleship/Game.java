@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * The main game class for Battleship. Handles initialisation of the game inside
- * the main class and contains methods for the main game loop.
+ * the main method and contains methods for the main game loop.
  * 
  * @author alastair
  *
