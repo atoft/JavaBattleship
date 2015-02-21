@@ -3,6 +3,14 @@ package com.addymotion.Battleship;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * A human controlled player. Methods allow the player to place their ships 
+ * either manually or at random, and to select cells on their turn, using
+ * command line inputs.
+ * 
+ * @author alastair
+ *
+ */
 public class HumanPlayer extends Player{
 
 	private World world;

@@ -2,6 +2,15 @@ package com.addymotion.Battleship;
 
 import java.util.Random;
 
+/**
+ * Implementation of the AIStrategy. If the AI hits a ship, it will 
+ * search around the surrounding cells until it gets another hit.
+ * 
+ * Currently used by the game.
+ * 
+ * @author alastair
+ *
+ */
 public class AINormalStrategy extends AIStrategy{
 
 	@Override

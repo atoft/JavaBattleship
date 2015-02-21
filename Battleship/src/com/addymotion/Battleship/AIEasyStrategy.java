@@ -1,7 +1,13 @@
 package com.addymotion.Battleship;
-
 import java.util.Random;
 
+/**
+ * Implementation of the AIStrategy which simply picks random cells.
+ * 
+ * Not currently used in the game.
+ * @author alastair
+ *
+ */
 public class AIEasyStrategy extends AIStrategy{
 
 	@Override
