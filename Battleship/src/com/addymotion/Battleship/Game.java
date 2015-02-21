@@ -1,7 +1,13 @@
 package com.addymotion.Battleship;
 import java.util.Scanner;
 
-
+/**
+ * The main game class for Battleship. Handles initialisation of the game inside
+ * the main class and contains methods for the main game loop.
+ * 
+ * @author alastair
+ *
+ */
 public class Game {
 	
 	static Scanner main_input=new Scanner(System.in);
@@ -9,7 +15,14 @@ public class Game {
 	static HumanPlayer player = new HumanPlayer();
 	static AIPlayer ai = new AIPlayer();	
 
-	public static void play(HumanPlayer player1, AIPlayer player2){ 	//The method for main gameplay and win conditions
+	
+	/**
+	 * Controls the main gameplay cycle. Given two player objects, allows them to take turns
+	 * and ends the game when all of one player's ships are destroyed.
+	 * @param player1 The first player - the human player in this implementation
+	 * @param player2 The second player - the AI in this implementation
+	 */
+	public static void play(Player player1, Player player2){ 
 		World pWorld = player1.getWorld();
 		World eWorld = player2.getWorld();
 		while(pWorld.getAliveTotal()!=0){
